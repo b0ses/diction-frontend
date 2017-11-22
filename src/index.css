@@ -1,0 +1,27 @@
+body{
+	font-family: 'Helvetica';
+}
+
+#top-half {
+	background-color: #430F4B;
+	color: #FFFFFF;
+	padding-bottom: 10px;
+}
+
+#topbar div{
+	padding: 5px;
+}
+
+#quote {
+	font-family: 'Parisienne', cursive;
+	font-size: 1.5em;
+
+}
+
+.highlight{
+	color: red;
+}
+
+#twister{
+	padding:20px;
+}
