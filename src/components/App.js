@@ -50,7 +50,7 @@ export default class App extends React.Component {
 	}
 
 	render () {
-		let twister_count = null; 
+		let twister_count = <p>&nbsp;</p>; 
 		if (this.state.count > 0) {
 			twister_count = <p>Twisters completed: {this.state.count}</p>
 		}
