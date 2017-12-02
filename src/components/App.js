@@ -6,6 +6,7 @@ export default class App extends React.Component {
 		super();
 		this.state = {
 			twister: "",
+			source: "",
 			count: 0
 		}
 		this.newTwister = this.newTwister.bind(this);
@@ -14,6 +15,7 @@ export default class App extends React.Component {
 	newTwister() {
 		this.setState({
 			twister: this.state.twister,
+			source: this.state.source,
 			count: this.state.count + 1
 		})
 		this.populateTwister();
@@ -24,9 +26,9 @@ export default class App extends React.Component {
 		.then(twister => {
 			return twister.json();
 		}).then(data => {
-			let twister = data.twister;
 			this.setState({
-				twister: twister,
+				twister: data.twister,
+				source: data.source,
 				count: this.state.count
 			})
 		})
@@ -75,6 +77,7 @@ export default class App extends React.Component {
 				<div id="bottom-half" className="container-fluid">
 					<div id="twister" className="row text-center">
 						<p>{this.nl2br(this.state.twister)}</p>
+						<br/><p><a href={this.state.source}>Source</a></p>
 					</div>
 				</div>
 			</div>
