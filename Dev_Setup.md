@@ -2,6 +2,8 @@
 
 Really I don't expect other developers for this project but I like to have this process saved for future projects.
 
+Note that the organization/structure is significantly copied from [usaspending-website](https://github.com/fedspendingtransparency/usaspending-website) used for [beta.usaspending.org](https://beta.usaspending.gov/#/). 
+
 ## Text Editors
 Text editors I use, you can use whatever:
 
@@ -24,34 +26,9 @@ Get some [Node.JS](https://nodejs.org/en/)
 
     Installing react
     > npm init
-    > npm install --save react react-dom
-    Setup babel
-    > npm install --save-dev babel-core babel-preset-es2015 babel-loader babel-preset-react
-
-And make/edit your `.babelrc` file to include:
-
-    {
-      "presets": ["react", "es2015"]
-    }
-
-Get some webpack:
-
-    > npm install --save-dev webpack webpack-dev-server html-webpack-plugin
-
-Edit the `package.json` file so it makes sense and includes the following:
-
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "deploy": "npm run build && npm run git-commit && npm run git-push",
-      "build": "webpack",
-      "start": "webpack-dev-server"
-    },
-
-Let's add Bootstrap while we're at it:
-
-     npm install --save bootstrap
+    > npm install
 
 And run things at `localhost:8080`:
 
-    > npm run start
+    > npm start
+
