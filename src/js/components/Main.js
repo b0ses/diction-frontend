@@ -75,14 +75,14 @@ export default class App extends React.Component {
 					</h4>
 					<div className="flex-row">
 						<div className="p-2">
-						<button autoFocus id="twist" className="btn btn-default mx-auto d-block" onClick={this.newTwister}>Twist</button>
+						<button autoFocus id="twist" className="btn btn-light mx-auto d-block" onClick={this.newTwister}>Twist</button>
 						</div>
 					</div>
 				</div>
 				<div id="bottom-half" className="container-fluid">
 					<div id="twister" className="flex-row text-center">
 						<p>{this.nl2br(this.state.twister)}</p>
-						<br/><p><a href={this.state.source}>Source</a></p>
+						<br/><p><a href={this.state.source} target="_blank">Source</a></p>
 					</div>
 				</div>
 			</div>
