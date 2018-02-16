@@ -1,6 +1,6 @@
 // Production values
 const kGlobalConstants = {
-    API: 'https://www.dictionpractice.com:8080/api/',
+    API: 'https://api.dictionpractice.com/api/',
     LOCAL_ROOT: '',
     GITHUB: '',
     GA_TRACKING_ID: '',
